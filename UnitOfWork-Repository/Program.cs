@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using UnityOfWork_Repository.Data;
+using UnitOfWork_Repository.Configuration;
+using UnitOfWork_Repository.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

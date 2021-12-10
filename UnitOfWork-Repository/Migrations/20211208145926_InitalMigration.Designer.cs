@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using UnityOfWork_Repository.Data;
+using UnitOfWork_Repository.Data;
 
 #nullable disable
 
-namespace UnityOfWork_Repository.Migrations
+namespace UnitOfWork_Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20211208145926_InitalMigration")]

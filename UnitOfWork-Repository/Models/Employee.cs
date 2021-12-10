@@ -1,4 +1,4 @@
-﻿namespace UnityOfWork_Repository.Models
+﻿namespace UnitOfWork_Repository.Models
 {
     public class Employee
     {

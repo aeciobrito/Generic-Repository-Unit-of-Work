@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using UnityOfWork_Repository.Models;
+using UnitOfWork_Repository.Models;
 
-namespace UnityOfWork_Repository.Data
+namespace UnitOfWork_Repository.Data
 {
     public class ApplicationDbContext : DbContext
     {
