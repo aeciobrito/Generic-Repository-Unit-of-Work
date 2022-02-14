@@ -6,13 +6,11 @@ namespace UnitOfWork_Repository.Services
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        protected ApplicationDbContext _context;
         internal DbSet<T> _dbSet;
         protected readonly ILogger _logger;
 
         public GenericRepository(ApplicationDbContext context, ILogger logger)
         {
-            _context = context;
             _logger = logger;
             _dbSet = context.Set<T>();
         }
